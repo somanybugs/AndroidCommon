@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+    </style>
+</resources>

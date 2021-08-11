@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_ok">确认</string>
+    <string name="common_cancel">取消</string>
+    <string name="agg_yesterday_date_fmt">昨天%H:%M</string>
+    <string name="agg_today_date_fmt">今天%H:%M</string>
+    <string name="agg_minutes_ago_fmt">%d分钟前</string>
+    <string name="agg_justnow">刚刚</string>
+    <string name="hg_prl_nodata">没有数据</string>
+    <string name="hg_unlimited">不限</string>
+    <string name="hg_select_count_fmt" formatted="false">已选择%d</string>
+    <string name="delete">删除</string>
+</resources>

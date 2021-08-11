@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lhg.common" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        >
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--提供共享路径-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider"/>
+        </provider>
+
+<!--        <provider-->
+<!--            android:name=".provider.DemoDocumentsProvider"-->
+<!--            android:authorities="${applicationId}.documents"-->
+<!--            android:grantUriPermissions="true"-->
+<!--            android:exported="true"-->
+<!--            android:permission="android.permission.MANAGE_DOCUMENTS"-->
+<!--            android:enabled="@bool/provider_shout_documents">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />-->
+<!--            </intent-filter>-->
+<!--        </provider>-->
+
+        <activity android:name=".activity.FragmentContainer"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.LogsBrowserActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.PicturesBrowser"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <activity android:name=".activity.WebViewActivity"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name=".activity.AboutActivity"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name="lhg.common.activity.FilePickerActivity"
+            android:label="文件选择"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".activity.LogViewActivity" android:theme="@style/AppTheme"/>
+    </application>
+</manifest>

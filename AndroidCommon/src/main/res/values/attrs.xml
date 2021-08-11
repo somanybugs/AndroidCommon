@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="hg_horizontalSpacing" format="dimension" />
+    <attr name="hg_verticalSpacing" format="dimension" />
+    <attr name="hg_columnWidth" format="dimension" />
+    <attr name="hg_rowHeight" format="dimension" >
+        <enum name="wrap" value="-1" />
+        <enum name="fill" value="-2" />
+    </attr>
+    <attr name="hg_numColumns" format="integer">
+        <enum name="auto_fit" value="0" />
+    </attr>
+    <attr name="hg_heightFillMinRows" format="integer"/>
+
+    <declare-styleable name="HGGridLayout">
+        <attr name="hg_horizontalSpacing" />
+        <attr name="hg_verticalSpacing" />
+        <attr name="hg_columnWidth" />
+        <attr name="hg_rowHeight" />
+        <attr name="hg_numColumns"/>
+        <attr name="hg_heightFillMinRows"/>
+    </declare-styleable>
+
+    <declare-styleable name="RatioFrameLayout">
+        <attr name="rfl_heightRatio" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TextViewWithProgress">
+        <attr name="tvp_progress_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CirclePasswordView">
+        <attr name="cpv_count" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ImageTextView">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="android:text" />
+        <attr name="itv_icon_padding" format="dimension"/>
+        <attr name="itv_icon" format="reference"/>
+        <attr name="itv_radius" format="dimension" />
+        <attr name="itv_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LineWrapLayout">
+        <attr name="hg_horizontalSpacing" />
+        <attr name="hg_verticalSpacing" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTextWithSuffix">
+        <attr name="suffix" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TextTabLayout">
+        <attr name="ttl_tabSelectedSize" format="dimension|reference" />
+        <attr name="ttl_tabUnSelectedSize" format="dimension|reference" />
+        <attr name="ttl_tabSelectedColor" format="color|reference" />
+        <attr name="ttl_tabUnSelectedColor" format="color|reference" />
+        <attr name="ttl_tabPaddingLeft" format="dimension|reference" />
+        <attr name="ttl_tabPaddingRight" format="dimension|reference" />
+        <attr name="ttl_tabPaddingBottom" format="dimension|reference" />
+        <attr name="ttl_tabPaddingTop" format="dimension|reference" />
+        <attr name="ttl_tabMinWidth" format="dimension|reference" />
+        <attr name="ttl_tabGravity" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="ttl_tabMode" format="enum">
+            <enum name="MODE_FIXED" value="0"/>
+            <enum name="MODE_SCROLL" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ScrimInsetsLayout">
+        <attr name="statusBarBackground" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrimInsetsLayout_LayoutParams">
+        <attr name="layout_applyWindowInsets" format="enum" >
+            <enum name="none" value="0"/>
+            <enum name="margin" value="1"/>
+            <enum name="padding" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NestedPageLayout_LayoutParams">
+        <attr name="layout_maxMatchParent" format="boolean" >
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NestedPageScrollView_LayoutParams">
+        <attr name="layout_maxHeight" format="dimension" >
+            <enum name="match_parent" value="-1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PullDownLayout">
+        <attr name="pdl_mode" format="enum" >
+            <enum name="under" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+        <attr name="pdl_closeType" format="enum" >
+            <enum name="normal" value="0"/>
+            <enum name="allways" value="1"/>
+        </attr>
+        <attr name="pdl_pullToClosePosition" format="float"/>
+        <attr name="pdl_pullToOpenPosition" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="DrawerLayout">
+        <attr name="dlt_statusBarBackground" format="reference|color" />
+
+    </declare-styleable>
+    <declare-styleable name="DrawerLayout_LayoutParams">
+        <attr name="layout_dlt_closeType" format="enum" >
+            <enum name="normal" value="0"/>
+            <enum name="allways" value="1"/>
+        </attr>
+        <attr name="layout_dlt_pullToClosePosition" format="float"/>
+        <attr name="layout_dlt_pullToOpenPosition" format="float"/>
+        <attr name="layout_dlt_sizeWeight" format="float"/>
+        <attr name="layout_dlt_applyWindowInsets" format="enum" >
+            <enum name="none" value="0"/>
+            <enum name="margin" value="1"/>
+            <enum name="padding" value="2"/>
+        </attr>
+        <attr name="layout_dlt_mode" format="enum" >
+            <enum name="cover" value="0"/>
+            <enum name="concat" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="BubbleLayout">
+        <attr name="bbl_soldColor" format="reference|color" />
+        <attr name="bbl_shadowColor" format="reference|color" />
+        <attr name="bbl_radius" format="dimension"/>
+        <attr name="bbl_arrowWidth" format="dimension"/>
+        <attr name="bbl_arrowHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

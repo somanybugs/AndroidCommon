@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="16dip"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:scaleType="fitXY"
+                android:layout_width="80dip"
+                android:layout_height="80dip"/>
+
+            <TextView
+                android:paddingTop="8dip"
+                android:id="@+id/tvTitle"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:autoLink="email|phone|web"
+                android:paddingTop="8dip"
+                android:id="@+id/tvDetail"
+                android:textSize="16sp"
+                android:textColor="@color/darkgray_text"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:paddingTop="20dip"
+                android:id="@+id/ll_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

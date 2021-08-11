@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <lhg.common.view.HackyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:scaleType="center"
+        android:layout_gravity="right"
+        android:id="@+id/iv_delete"
+        android:src="@drawable/ic_white_trash"
+        android:layout_width="46dip"
+        android:layout_height="46dip" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:maxLines="4"
+        android:padding="16dip"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</FrameLayout>

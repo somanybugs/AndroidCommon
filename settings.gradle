@@ -1,0 +1,3 @@
+rootProject.name = "AndroidCommon"
+include ':demo'
+include ':AndroidCommon'

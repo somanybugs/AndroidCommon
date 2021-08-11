@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path path="" name="share_files" />
+        <files-path name="shout" path="shout" />
+        <cache-path name="shout" path="shout" />
+        <external-files-path name="shout" path="shout" />
+    </paths>
+</resources>
