@@ -832,6 +832,17 @@ public class Utils {
         return null;
     }
 
+
+    public static Activity getActivityFromContext(Context context) {
+        while (context instanceof ContextWrapper) {
+            if (context instanceof Activity) {
+                return (Activity) context;
+            }
+            context = ((ContextWrapper) context).getBaseContext();
+        }
+        return null;
+    }
+
     public static String getSignature(Context context)
     {
         try {
